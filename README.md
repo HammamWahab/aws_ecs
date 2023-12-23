@@ -1,10 +1,13 @@
-## Deploy image using ECS 
+# Deploy images on AWS using ECS 
 
-Assuming you have a cluster on ecs, you can create a service using:
-`python3 src/create_ecs_services.py`
-
-### ToDo: 
+### To do on AWS UI: 
 - Create 2 security groups 
     a. One with inbound only 80.
     b. One with only security group (a).
-- Create an application load balancer and attatch it to the created server. 
+- Create the Application Load Balancer
+
+### Create the ECS Service
+Assuming you have a cluster on ecs and an application load balancer, you can create a service using:
+`python3 src/create_ecs_services.py`
+
+
